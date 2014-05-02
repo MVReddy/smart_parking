@@ -2,7 +2,7 @@
 
 """
 
-__author__ = 'craig'
+__author__ = 'Obed N Munoz'
 import pygame
 import json_loader
 
