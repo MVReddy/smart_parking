@@ -3,11 +3,18 @@ import pygame
 
 class Player(pygame.sprite.Sprite):
 
-    _initial_center = (0,0)
+    _position = (0,0) 
     
+    @property
+    def position(self): 
+        return self._position
+
+    @position.setter
+    def position(self, position):
+        self._position = position 
+
     def __init__(self, center, filename):
         pygame.sprite.Sprite.__init__(self)
-        self._initial_center = (center[0], center[1])
         try:
             self.image = pygame.image.load(filename).convert_alpha()
         except IOError:

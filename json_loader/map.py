@@ -8,13 +8,14 @@ class Tile(pygame.sprite.Sprite):
         pygame.sprite.Sprite.__init__(self)
 
 class Map():
-    def __init__(self, initial):
+    def __init__(self, initial, initial_position):
         self.initial = initial
+        self.initial_position = initial_position
         self.all_layers = initial.all_layers
         self.collision_layers = initial.collision_layers
         self.mapheight = initial.mapheight
         self.mapwidth = initial.mapwidth
-        self.speed = 10
+        self.speed = 16
 
         topleft = self.all_layers[0][0].rect.topleft
         self.mapx = topleft[0]
@@ -24,7 +25,7 @@ class Map():
         self.phone_height = initial. phone_rect.height
         self.virtual_game_controller = GameController(initial)
         basefont = pygame.font.Font("assets/fnt/ASTONISH.TTF", 30)
-        self.test_message = basefont.render("Test Button", True, (0,0,0), (255, 255, 255))
+        self.test_message = basefont.render("New Car", True, (0,0,0), (255, 255, 255))
         initial.test_rect = self.test_message.get_rect()
 
 
@@ -65,16 +66,9 @@ class Map():
         return (self.clear_move)
 
 
-    def areas(self):
-        move = False
-        if self.mapx < self.all_layers[0][0].rect.topleft:
-            move = True
-        return move
- 
     def update(self, direction):
         x = 0
         y = 0
-        print direction 
         self.direction = direction
         if self.clear_to_move(): 
             if direction == "right":
@@ -83,14 +77,34 @@ class Map():
                 x += self.speed
             elif direction == "up":
                 y += self.speed
+            elif direction == "lup":
+                x += self.speed
+                y += self.speed
+            elif direction == "rup":
+                x -= self.speed
+                y += self.speed
             elif direction == "down":
                 y -= self.speed
+            elif direction == "ldown":
+                x += self.speed
+                y -= self.speed
+            elif direction == "rdown":
+                x -= self.speed
+                y -= self.speed
+            elif direction == "start":
+                x = -(self.mapx + initial_position[0]) 
+                y = -(self.mapy + initial_position[1])
+                
         self.move(x,y) 
 
+    
     def move(self, x = 0, y = 0):
         self.mapx += x
         self.mapy += y
-        print (self.mapx, self.mapy)
+        
+        # Setting new position for Car Player
+        self.player.position =  (-(((self.mapx - 546)/32) + 2), -(((self.mapy -411)/32) + 2))
+  
         for current_layer in self.all_layers:
             for tile in current_layer:
                 tile.rect.move_ip(x, y)

@@ -13,6 +13,7 @@ class Event():
     def __init__(self, initial):
         self.direction = "stop"
         self.initial = initial
+        self.initial.test = False 
         self.virtual_game_controller = GameController(initial)
         self.jump = False
         self.fall = False
@@ -30,30 +31,32 @@ class Event():
             elif event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_UP:
                     self.direction = "up"
-                    print "up"
                 elif event.key == pygame.K_DOWN:
                     self.direction = "down"
-                    print "down"
                 elif event.key == pygame.K_LEFT:
                     self.direction = "left"
-                    print "left" 
                 elif event.key == pygame.K_RIGHT:
                     self.direction = "right"
-                    print "right"
                 elif event.key == pygame.K_SPACE:
                     self.direction = "stop"
+                elif event.key == pygame.K_q:
+                    self.direction = "lup"
+                elif event.key == pygame.K_w:
+                    self.direction = "rup"
+                elif event.key == pygame.K_a:
+                    self.direction = "ldown"
+                elif event.key == pygame.K_s:
+                    self.direction = "rdown"   
 # Mouse Event Handleling
-#            if event.type == pygame.MOUSEBUTTONDOWN:
-#                self.game_buttons()
+            if event.type == pygame.MOUSEBUTTONDOWN:
+                self.game_buttons()
 #        self.mouse_direction()
 
     def game_buttons(self):
         mouse_pos = pygame.mouse.get_pos()
         if self.initial.test_rect.collidepoint(mouse_pos):
-            if self.initial.test:
-                self.initial.test = False
-            else:
-                self.initial.test = True
+#            self.initial.test = False
+            self.direction = "start"
 
 
     def mouse_direction(self):
@@ -62,7 +65,7 @@ class Event():
         Checks for mouse position (same as touchscreen)
         """
         mouse_pos = pygame.mouse.get_pos()
-
-        for button in self.virtual_game_controller.gamebuttons:
-            if button.rect.collidepoint(mouse_pos):
-                self.direction = button.name
+         
+        #for button in self.virtual_game_controller.gamebuttons:
+        #    if button.rect.collidepoint(mouse_pos):
+        #        self.direction = button.name

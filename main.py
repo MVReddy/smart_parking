@@ -21,7 +21,7 @@ def main():
     FPS = 40
 
     # change the file names to your player graphic and map file
-    player_image_file = "img/boy.png"
+    player_image_file = "img/boy_32px.png"
     map_file = "maps/mega_map.json"
 
     # change to False (with capital F) to turn off red squares over
@@ -32,20 +32,32 @@ def main():
     initial = json_loader.Initialize(screen, TESTING, map_file, player_image_file)
 
     # initialize position of player when game first starts
-    map = json_loader.Map(initial)
-    map.move(-4770, -4900)
+    initial_position = (-4574,-4837)  
+    map = json_loader.Map(initial, initial_position)
+    map.move(initial_position[0], initial_position[1])
 
     # handle events such as keyboard / touchscreen presses
     event = json_loader.Event(initial)
     clock = pygame.time.Clock()
 
-
+    [x,y] = [0,0]
     while True:
         event.update()
         map.update(event.direction)
+        
+#        if event.direction == "start":
+        event.direction = "stop"  
+
+        # Paths Creation Helpers
+        if x != map.mapx or y != map.mapy:        
+             print [[map.mapx,map.mapy], "-->", [map.player.position[0]], map.player.position[1]] 
+        x = map.mapx
+        y = map.mapy 
+  
         map.display(screen)
         clock.tick(FPS)
         pygame.display.update()
+        event.update()                                                                                  
 
 if __name__ == "__main__":
     main()
