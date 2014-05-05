@@ -14,7 +14,7 @@ class Map():
         self.collision_layers = initial.collision_layers
         self.mapheight = initial.mapheight
         self.mapwidth = initial.mapwidth
-        self.speed = 3
+        self.speed = 10
 
         topleft = self.all_layers[0][0].rect.topleft
         self.mapx = topleft[0]
@@ -65,12 +65,18 @@ class Map():
         return (self.clear_move)
 
 
-
+    def areas(self):
+        move = False
+        if self.mapx < self.all_layers[0][0].rect.topleft:
+            move = True
+        return move
+ 
     def update(self, direction):
         x = 0
         y = 0
+        print direction 
         self.direction = direction
-        if self.clear_to_move():
+        if self.clear_to_move(): 
             if direction == "right":
                 x -= self.speed
             elif direction == "left":
@@ -79,12 +85,12 @@ class Map():
                 y += self.speed
             elif direction == "down":
                 y -= self.speed
-        self.move(x, y)
-
+        self.move(x,y) 
 
     def move(self, x = 0, y = 0):
         self.mapx += x
         self.mapy += y
+        print (self.mapx, self.mapy)
         for current_layer in self.all_layers:
             for tile in current_layer:
                 tile.rect.move_ip(x, y)
@@ -93,9 +99,11 @@ class Map():
                 tile.rect.move_ip(x,y)
 
     def display(self, screen):
+
         for layer in self.all_layers:
             for tile in layer:
                 screen.blit(tile.image, tile.rect)
+                 
         if self.initial.test:
             for layer in self.collision_layers:
                 for collision_tile in layer:
@@ -103,4 +111,5 @@ class Map():
 
             self.virtual_game_controller.gamebuttons.draw(screen)
         screen.blit(self.test_message, (5, 5))
+
         screen.blit(self.player.image, self.player.rect)

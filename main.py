@@ -13,7 +13,7 @@ def main():
     # initialize pygame
     pygame.init()
     # set screen size of phone or desktop window.  Adjust to your phone
-    screen = pygame.display.set_mode((800, 600))
+    screen = pygame.display.set_mode((1024, 768))
     pygame.display.set_caption("Use keyboard arrow keys or mouse.  Press TEST to toggle overlay")
     
 
@@ -26,14 +26,14 @@ def main():
 
     # change to False (with capital F) to turn off red squares over
     # collision rectangles
-    TESTING = False
+    TESTING = True
 
     #initialize json loader, build tileset list, load player graphic
     initial = json_loader.Initialize(screen, TESTING, map_file, player_image_file)
 
     # initialize position of player when game first starts
     map = json_loader.Map(initial)
-    map.move(-200, 0)
+    map.move(-4770, -4900)
 
     # handle events such as keyboard / touchscreen presses
     event = json_loader.Event(initial)

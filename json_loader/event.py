@@ -30,17 +30,22 @@ class Event():
             elif event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_UP:
                     self.direction = "up"
+                    print "up"
                 elif event.key == pygame.K_DOWN:
                     self.direction = "down"
+                    print "down"
                 elif event.key == pygame.K_LEFT:
                     self.direction = "left"
+                    print "left" 
                 elif event.key == pygame.K_RIGHT:
                     self.direction = "right"
+                    print "right"
                 elif event.key == pygame.K_SPACE:
-                    self.jump = True
-            if event.type == pygame.MOUSEBUTTONDOWN:
-                self.game_buttons()
-        self.mouse_direction()
+                    self.direction = "stop"
+# Mouse Event Handleling
+#            if event.type == pygame.MOUSEBUTTONDOWN:
+#                self.game_buttons()
+#        self.mouse_direction()
 
     def game_buttons(self):
         mouse_pos = pygame.mouse.get_pos()
