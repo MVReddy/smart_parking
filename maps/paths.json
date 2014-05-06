@@ -2,42 +2,88 @@
   "sections":[ 
   {
     "name": "sec1",
-    "location": [146,153],
-    "path_from_start": [[159, 163], [158, 162], [157, 161], [156, 160], [155, 159], [154, 158], [153, 157], [152, 156], [151, 155], [151, 154], [151, 153], [150, 153], [149, 153], [148, 153], [147, 153], [146, 153]],
-    "no_slots": 2,
+    "location": [158,162],
+    "path_from_start": [[158, 162],[157, 161],[156, 160],[155, 159],[154, 158],[153, 157],[152, 156],[151, 155],[151, 154],[151, 153],[150, 153],[149, 153],[148, 153],[147, 153],[146, 153]],
+    "no_slots": 6,
     "near_sections": ["sec2", "sec3"],
     "slots":[
     {
-      "id": "slot_1",
-      "path_from_section_start": [[146, 153], [146, 154], [146, 155], [146, 156], [146, 157], [146, 158], [146, 159], [146, 160],[147,160]],
-      "status": "busy",
+      "id": 1,
+      "location": [147,155],
+      "path_from_section_start": [[146, 153],[146, 154],[146, 155],[147,155]],
+      "status": "free",
       "type": "normal"
     },
     {
-      "id": "slot_2",
-      "path_from_section_start": [[1,1],[2,2]],
-      "status": "busy",
+      "id": 2,
+      "location": [147,156],
+      "path_from_section_start": [[146, 153],[146, 154],[146, 155],[146,156],[147,156]],
+      "status": "free",
       "type": "normal"
-    }  
+    },
+    {
+      "id": 3,
+      "location": [147,157],
+      "path_from_section_start": [[146, 153],[146, 154],[146, 155],[146,156],[146,157],[147,157]],
+      "status": "free",
+      "type": "normal"
+    },
+    {
+      "id": 4,
+      "location": [147,158],
+      "path_from_section_start": [[146, 153],[146, 154],[146, 155],[146,156],[146,157],[146,158],[147,158]],
+      "status": "free",
+      "type": "normal"
+    },
+    {
+      "id": 5,
+      "location": [147,159],
+      "path_from_section_start": [[146, 153],[146, 154],[146, 155],[146,156],[146,157],[146,158],[146,159],[147,159]],
+      "status": "free",
+      "type": "normal"
+    },
+    {
+      "id": 6,
+      "location": [147,160],
+      "path_from_section_start": [[146, 153],[146, 154],[146, 155],[146,156],[146,157],[146,158],[146,159],[146,160],[147,160]],
+      "status": "free",
+      "type": "normal"
+    }
     ]
   },
   {
     "name": "sec2",
-    "location": [1,2],
-    "path_from_start": [[1,1],[3,3]],
-    "no_slots": 1,
+    "location": [149,152],
+    "path_from_start": [[158, 162],[157, 161],[156, 160],[155, 159],[154, 158],[153, 157],[152, 156],[151, 155],[151, 154],[151, 153],[151, 152],[150, 152],[149, 152]],
+    "no_slots": 4,
     "near_sections": ["sec2", "sec3"],
     "slots":[
     {
-      "id": "slot_1",
-      "path_from_section_start": [[1,1],[2,2]],
-      "status": "busy",
+      "id": 1,
+      "location": [148,151], 
+      "path_from_section_start": [[149,152],[148,152],[148,151]],
+      "status": "free",
       "type": "normal"
     },
     {
-      "id": "slot_2",
-      "path_from_section_start": [[1,1],[2,2]],
-      "status": "busy",
+      "id": 2,
+      "location": [147,151],
+      "path_from_section_start": [[149,152],[148,152],[147,152],[147,151]],
+      "status": "free",
+      "type": "normal"
+    },
+    {
+      "id": 3,
+      "location": [146,151], 
+      "path_from_section_start": [[149,152],[148,152],[147,152],[146,152],[146,151]],
+      "status": "free",
+      "type": "normal"
+    },
+    {
+      "id": 4,
+      "location": [145,151],
+      "path_from_section_start": [[149,152],[148,152],[147,152],[146,152],[145,152],[145,151]],
+      "status": "free",
       "type": "normal"
     }
     ]

@@ -44,11 +44,13 @@ class Initialize():
                         current_collision_layer = []
             data = layer["data"]
             index = 0
+
             for y in range(0, layer["height"]):
                 for x in range(0, layer["width"]):
                     id_key = data[index]
                     if id_key != 0:
                         tile = Tile()
+                        tile.position = [x,y]
                         tile.rect = pygame.Rect(x * 32, y * 32, 32, 32)
                         tile.image = self.all_tiles[id_key]
                         current_layer.append(tile)

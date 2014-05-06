@@ -7,10 +7,10 @@ try:
         paths = json.loads(paths_file.read())
         sections = paths["sections"]
         for section in sections:
-            print section["name"]
-            slots = section["slots"]
-            for slot in slots: 
-                print slot["id"] 
+            print section["path_from_start"]
+#            slots = section["slots"]
+#            for slot in slots: 
+#                print slot["id"] 
         
              
 except IOError:

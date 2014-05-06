@@ -1,6 +1,7 @@
 __author__ = 'craig'
 
 import pygame
+import random
 from controller import *
 
 class Tile(pygame.sprite.Sprite):
@@ -15,7 +16,7 @@ class Map():
         self.collision_layers = initial.collision_layers
         self.mapheight = initial.mapheight
         self.mapwidth = initial.mapwidth
-        self.speed = 16
+        self.speed = 32
 
         topleft = self.all_layers[0][0].rect.topleft
         self.mapx = topleft[0]
@@ -61,7 +62,7 @@ class Map():
         if self.direction == "down" and self.mapy < self.phone_height - self.mapheight + self.speed:
             self.clear_move = False
 
-        if self.clear_move:
+        if self.clear_move and self.direction == "car_moving":
             self.check_collision()
         return (self.clear_move)
 
@@ -92,16 +93,23 @@ class Map():
                 x -= self.speed
                 y -= self.speed
             elif direction == "start":
-                x = -(self.mapx + initial_position[0]) 
-                y = -(self.mapy + initial_position[1])
-                
+                x = -(self.mapx - self.initial_position[0]) 
+                y = -(self.mapy - self.initial_position[1])
+        else:
+            print "not clear to move"
         self.move(x,y) 
 
+    def move_to_tile(self,tile):
+        tile_x = tile[0]
+        tile_y = tile[1]
+        x = -(self.mapx + (32*(tile_x + 1) - 546 )) - 32
+        y = -(self.mapy + (32*(tile_y + 1) - 411 )) - 32
+        
+        self.move(x,y)
     
     def move(self, x = 0, y = 0):
         self.mapx += x
         self.mapy += y
-        
         # Setting new position for Car Player
         self.player.position =  (-(((self.mapx - 546)/32) + 2), -(((self.mapy -411)/32) + 2))
   
@@ -112,8 +120,13 @@ class Map():
             for tile in collision_layer:
                 tile.rect.move_ip(x,y)
 
-    def display(self, screen):
+    def change_tile(self, position, layer, tile_idx): 
 
+        for tile in self.all_layers[layer]:
+            if tile.position == position:
+                tile.image = self.all_layers[10][tile_idx].image 
+         
+    def display(self, screen):
         for layer in self.all_layers:
             for tile in layer:
                 screen.blit(tile.image, tile.rect)
@@ -125,5 +138,5 @@ class Map():
 
             self.virtual_game_controller.gamebuttons.draw(screen)
         screen.blit(self.test_message, (5, 5))
-
+#        if self.direction == "car_moving":  
         screen.blit(self.player.image, self.player.rect)
