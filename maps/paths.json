@@ -63,28 +63,68 @@
       "location": [148,151], 
       "path_from_section_start": [[149,152],[148,152],[148,151]],
       "status": "free",
-      "type": "normal"
+      "type": "normal", 
+      "destinations":[
+        {
+          "name":"Caseta Policia"
+          "distance": 100
+        },
+        {
+          "name":"Residencias 1",
+          "distance": 200
+        }
+        ]
     },
     {
       "id": 2,
       "location": [147,151],
       "path_from_section_start": [[149,152],[148,152],[147,152],[147,151]],
       "status": "free",
-      "type": "normal"
+      "type": "normal",
+      "destinations":[
+        {
+          "name":"Caseta Policia",
+          "distance": 100
+        },
+        {
+          "name":"Residencias 1",
+          "distance": 200
+        }
+        ]
     },
     {
       "id": 3,
       "location": [146,151], 
       "path_from_section_start": [[149,152],[148,152],[147,152],[146,152],[146,151]],
       "status": "free",
-      "type": "normal"
+      "type": "normal",
+      "destinations":[
+        {
+          "name":"Caseta Policia",
+          "distance": 100
+        },
+        {
+          "name":"Residencias 1",
+          "distance": 200
+        }
+        ]
     },
     {
       "id": 4,
       "location": [145,151],
       "path_from_section_start": [[149,152],[148,152],[147,152],[146,152],[145,152],[145,151]],
       "status": "free",
-      "type": "normal"
+      "type": "normal",
+      "destinations":[
+        {
+          "name":"Caseta Policia",
+          "distance": 100
+        },
+        {
+          "name":"Residencias 1",
+          "distance": 200
+        }
+        ]
     }
     ]
   }     
