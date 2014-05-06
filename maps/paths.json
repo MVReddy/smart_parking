@@ -5,49 +5,108 @@
     "location": [146,153],
     "path_from_start": [[158, 162],[157, 161],[156, 160],[155, 159],[154, 158],[153, 157],[152, 156],[151, 155],[151, 154],[151, 153],[150, 153],[149, 153],[148, 153],[147, 153],[146, 153]],
     "no_slots": 6,
-    "destinations": ["sec2", "sec3"],
     "slots":[
     {
       "id": 1,
       "location": [147,155],
       "path_from_section_start": [[146, 153],[146, 154],[146, 155],[147,155]],
       "status": "free",
-      "type": "normal"
+      "type": "normal",
+      "destinations":[
+        {
+          "name":"Caseta Policia",
+          "distance": 100
+        },
+        {
+          "name":"Residencias 1",
+          "distance": 200
+        }
+        ]
     },
     {
       "id": 2,
       "location": [147,156],
       "path_from_section_start": [[146, 153],[146, 154],[146, 155],[146,156],[147,156]],
       "status": "free",
-      "type": "normal"
+      "type": "normal",
+      "destinations":[
+        {
+          "name":"Caseta Policia",
+          "distance": 100
+        },
+        {
+          "name":"Residencias 1",
+          "distance": 200
+        }
+        ]
     },
     {
       "id": 3,
       "location": [147,157],
       "path_from_section_start": [[146, 153],[146, 154],[146, 155],[146,156],[146,157],[147,157]],
       "status": "free",
-      "type": "normal"
+      "type": "normal",
+      "destinations":[
+        {
+          "name":"Caseta Policia",
+          "distance": 100
+        },
+        {
+          "name":"Residencias 1",
+          "distance": 200
+        }
+        ]
     },
     {
       "id": 4,
       "location": [147,158],
       "path_from_section_start": [[146, 153],[146, 154],[146, 155],[146,156],[146,157],[146,158],[147,158]],
       "status": "free",
-      "type": "normal"
+      "type": "normal",
+      "destinations":[
+        {
+          "name":"Caseta Policia",
+          "distance": 100
+        },
+        {
+          "name":"Residencias 1",
+          "distance": 200
+        }
+        ]
     },
     {
       "id": 5,
       "location": [147,159],
       "path_from_section_start": [[146, 153],[146, 154],[146, 155],[146,156],[146,157],[146,158],[146,159],[147,159]],
       "status": "free",
-      "type": "normal"
+      "type": "normal",
+      "destinations":[
+        {
+          "name":"Caseta Policia",
+          "distance": 100
+        },
+        {
+          "name":"Residencias 1",
+          "distance": 200
+        }
+        ]
     },
     {
       "id": 6,
       "location": [147,160],
       "path_from_section_start": [[146, 153],[146, 154],[146, 155],[146,156],[146,157],[146,158],[146,159],[146,160],[147,160]],
       "status": "free",
-      "type": "normal"
+      "type": "normal",
+      "destinations":[
+        {
+          "name":"Caseta Policia",
+          "distance": 100
+        },
+        {
+          "name":"Residencias 1",
+          "distance": 200
+        }
+        ]
     }
     ]
   },
@@ -56,7 +115,6 @@
     "location": [149,152],
     "path_from_start": [[158, 162],[157, 161],[156, 160],[155, 159],[154, 158],[153, 157],[152, 156],[151, 155],[151, 154],[151, 153],[151, 152],[150, 152],[149, 152]],
     "no_slots": 4,
-    "near_sections": ["sec2", "sec3"],
     "slots":[
     {
       "id": 1,
@@ -66,7 +124,7 @@
       "type": "normal", 
       "destinations":[
         {
-          "name":"Caseta Policia"
+          "name":"Caseta Policia",
           "distance": 100
         },
         {
