@@ -7,7 +7,7 @@ from map import *
 
 
 class Initialize():
-    def __init__(self, phone_screen, testing, filename, player_image_file):
+    def __init__(self, phone_screen, testing, filename, player_image_file, paths, ocuppancy):
         try:
             with open(filename) as mapfile:
                 self.mapdict = json.loads(mapfile.read())
