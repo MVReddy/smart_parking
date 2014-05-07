@@ -1,4 +1,5 @@
 {
+  
   "sections":[ 
   {
     "name": "sec1:casetaEntrada",
@@ -582,6 +583,387 @@
         {
           "name":"Salon Congresos",
           "distance": 450
+        }
+        ]
+    }
+    ]
+  }, 
+  {
+    "name": "sec7-atrasCafeteria1",
+    "location": [136,126],
+    "path_from_start": [[158, 162],[157, 161],[156, 160],[155, 159],[154, 158],[153, 157],[152, 156],[151, 155],[151, 154],[151, 153],[151, 152],[151, 151],[151, 150],[151, 149],[150, 148],[149, 147],[148, 146],[147, 145],[146, 145],[145, 145],[144, 144],[144, 143],[144, 142],[144, 141],[144, 140],[144, 139],[144, 138],[144, 137],[144, 136],[144, 135],[144, 134],[144, 133],[144, 132],[144, 131],[144, 130],[144, 129],[144, 128],[144, 127],[144, 126],[144, 125],[144, 124],[144, 123],[143, 123],[142, 123],[141, 123],[140, 123],[139, 123],[138, 123],[137, 123],[136, 123]],
+    "no_slots": 5,
+    "destinations":[
+        {
+          "name":"Salon Congresos",
+          "distance": 400
+        },
+        {
+          "name":"Caseta Policia",
+          "distance": 400
+        },
+        {
+          "name":"Residencias 1",
+          "distance": 400
+        }
+    ],
+    "slots":[
+    {
+      "id": 1,
+      "location": [126, 124],
+      "path_from_section_start": [[136, 123],[135, 123],[134, 123],[133, 123],[132, 123],[131, 123],[130, 123],[129, 123],[128, 123],[127, 123],[126, 123],[126, 124]],
+      "status": "free",
+      "type": "normal",
+      "destinations":[
+        {
+          "name":"Caseta Policia",
+          "distance": 200
+        },
+        {
+          "name":"Residencias 1",
+          "distance": 100
+        },
+        {
+          "name":"Salon Congresos",
+          "distance": 150
+        }
+        ]
+    },
+    {
+      "id": 2,
+      "location": [125, 124],
+      "path_from_section_start": [[136, 123],[135, 123],[134, 123],[133, 123],[132, 123],[131, 123],[130, 123],[129, 123],[128, 123],[127, 123],[126, 123],[125, 123],[125, 124]],
+      "status": "free",
+      "type": "normal",
+      "destinations":[
+        {
+          "name":"Caseta Policia",
+          "distance": 205
+        },
+        {
+          "name":"Residencias 1",
+          "distance": 105
+        },
+        {
+          "name":"Salon Congresos",
+          "distance": 145
+        }
+        ]
+    },
+    {
+      "id": 3,
+      "location": [124, 124],
+      "path_from_section_start": [[136, 123],[135, 123],[134, 123],[133, 123],[132, 123],[131, 123],[130, 123],[129, 123],[128, 123],[127, 123],[126, 123],[125, 123],[124, 123],[124, 124]],
+      "status": "free",
+      "type": "normal",
+      "destinations":[
+        {
+          "name":"Caseta Policia",
+          "distance": 210
+        },
+        {
+          "name":"Residencias 1",
+          "distance": 107
+        },
+        {
+          "name":"Salon Congresos",
+          "distance": 140
+        }
+        ]
+    },
+    {
+      "id": 4,
+      "location": [123, 124],
+      "path_from_section_start": [[136, 123],[135, 123],[134, 123],[133, 123],[132, 123],[131, 123],[130, 123],[129, 123],[128, 123],[127, 123],[126, 123],[125, 123],[124, 123],[123, 123],[123, 124]],
+      "status": "free",
+      "type": "normal",
+      "destinations":[
+        {
+          "name":"Caseta Policia",
+          "distance": 213
+        },
+        {
+          "name":"Residencias 1",
+          "distance": 110
+        },
+        {
+          "name":"Salon Congresos",
+          "distance": 135
+        }
+        ]
+    },
+    {
+      "id": 5,
+      "location": [122, 124],
+      "path_from_section_start": [[136, 123],[135, 123],[134, 123],[133, 123],[132, 123],[131, 123],[130, 123],[129, 123],[128, 123],[127, 123],[126, 123],[125, 123],[124, 123],[123, 123],[122, 123],[122, 124]],
+      "status": "free",
+      "type": "normal",
+      "destinations":[
+        {
+          "name":"Caseta Policia",
+          "distance": 215
+        },
+        {
+          "name":"Residencias 1",
+          "distance": 113
+        },
+        {
+          "name":"Salon Congresos",
+          "distance": 130
+        }
+        ]
+    }
+    ]
+  }, 
+  {
+    "name": "sec8-atrasCafeteria2",
+    "location": [115, 128],
+    "path_from_start": [[158, 162],[157, 161],[156, 160],[155, 159],[154, 158],[153, 157],[152, 156],[151, 155],[151, 154],[151, 153],[151, 152],[151, 151],[151, 150],[151, 149],[150, 148],[149, 148],[148, 148],[147, 148],[146, 148],[145, 148],[144, 148],[144, 147],[144, 146],[144, 145],[144, 144],[144, 143],[144, 142],[144, 141],[144, 140],[144, 139],[144, 138],[144, 137],[144, 136],[144, 135],[144, 134],[144, 133],[144, 132],[144, 131],[144, 130],[144, 129],[144, 128],[144, 127],[144, 126],[144, 125],[144, 124],[144, 123],[143, 123],[142, 123],[141, 123],[140, 123],[139, 123],[138, 123],[137, 123],[136, 123],[135, 123],[134, 123],[133, 123],[132, 123],[131, 123],[130, 123],[129, 123],[128, 123],[127, 123],[126, 123],[125, 123],[124, 123],[123, 123],[122, 123],[121, 123],[120, 123],[119, 123],[118, 123],[117, 124],[116, 125],[115, 126],[115, 127],[115, 128]],
+    "no_slots": 5,
+    "destinations":[
+        {
+          "name":"Salon Congresos",
+          "distance": 420
+        },
+        {
+          "name":"Caseta Policia",
+          "distance": 420
+        },
+        {
+          "name":"Residencias 1",
+          "distance": 420
+        }
+    ],
+    "slots":[
+    {
+      "id": 1,
+      "location": [115, 131],
+      "path_from_section_start": [[115, 128],[115, 129],[115, 130],[115, 131]],
+      "status": "free",
+      "type": "normal",
+      "destinations":[
+        {
+          "name":"Caseta Policia",
+          "distance": 180
+        },
+        {
+          "name":"Residencias 1",
+          "distance": 110
+        },
+        {
+          "name":"Salon Congresos",
+          "distance": 160
+        }
+        ]
+    },
+    {
+      "id": 2,
+      "location": [116, 131],
+      "path_from_section_start": [[115, 128],[115, 129],[116, 130],[116, 131]],
+      "status": "free",
+      "type": "normal",
+      "destinations":[
+        {
+          "name":"Caseta Policia",
+          "distance": 178
+        },
+        {
+          "name":"Residencias 1",
+          "distance": 107
+        },
+        {
+          "name":"Salon Congresos",
+          "distance": 163
+        }
+        ]
+    },
+    {
+      "id": 3,
+      "location": [117, 131],
+      "path_from_section_start": [[115, 128],[116, 129],[117, 130],[117, 131]],
+      "status": "free",
+      "type": "normal",
+      "destinations":[
+        {
+          "name":"Caseta Policia",
+          "distance": 175
+        },
+        {
+          "name":"Residencias 1",
+          "distance": 105
+        },
+        {
+          "name":"Salon Congresos",
+          "distance": 167
+        }
+        ]
+    },
+    {
+      "id": 4,
+      "location": [118, 131],
+      "path_from_section_start": [[115, 128],[116, 129],[117, 129],[118, 130],[118, 131]],
+      "status": "free",
+      "type": "normal",
+      "destinations":[
+        {
+          "name":"Caseta Policia",
+          "distance": 173
+        },
+        {
+          "name":"Residencias 1",
+          "distance": 107
+        },
+        {
+          "name":"Salon Congresos",
+          "distance": 165
+        }
+        ]
+    },
+    {
+      "id": 5,
+      "location": [119, 131],
+      "path_from_section_start": [[115, 128],[116, 128],[117, 128],[118, 128],[119, 128],[119, 129],[119, 130],[119, 131]],
+      "status": "free",
+      "type": "normal",
+      "destinations":[
+        {
+          "name":"Caseta Policia",
+          "distance": 170
+        },
+        {
+          "name":"Residencias 1",
+          "distance": 110
+        },
+        {
+          "name":"Salon Congresos",
+          "distance": 170
+        }
+        ]
+    }
+    ]
+  }, 
+  {
+    "name": "sec11-SalonCongresos",
+    "location": [115, 124],
+    "path_from_start": [[158, 162],[157, 161],[156, 160],[155, 159],[154, 158],[153, 157],[152, 156],[151, 155],[151, 154],[151, 153],[151, 152],[151, 151],[151, 150],[150, 149],[149, 148],[148, 148],[147, 148],[146, 148],[145, 148],[145, 147],[145, 146],[145, 145],[145, 144],[145, 143],[145, 142],[145, 141],[145, 140],[145, 139],[145, 138],[145, 137],[145, 136],[145, 135],[145, 134],[145, 133],[145, 132],[145, 131],[145, 130],[145, 129],[145, 128],[145, 127],[145, 126],[145, 125],[145, 124],[145, 123],[145, 122],[144, 122],[143, 122],[142, 122],[141, 122],[140, 122],[139, 122],[138, 122],[137, 122],[136, 122],[135, 122],[134, 122],[133, 122],[132, 122],[131, 122],[130, 122],[129, 122],[128, 122],[127, 122],[126, 122],[125, 122],[124, 122],[123, 122],[122, 122],[121, 122],[120, 122],[119, 122],[118, 122],[117, 122],[116, 123],[115, 124]],
+    "no_slots": 5,
+    "destinations":[
+        {
+          "name":"Salon Congresos",
+          "distance": 415
+        },
+        {
+          "name":"Caseta Policia",
+          "distance": 415
+        },
+        {
+          "name":"Residencias 1",
+          "distance": 415
+        }
+    ],
+    "slots":[
+    {
+      "id": 1,
+      "location": [112, 125],
+      "path_from_section_start": [[115, 124],[114, 125],[113, 125],[112, 125]],
+      "status": "free",
+      "type": "normal",
+      "destinations":[
+        {
+          "name":"Caseta Policia",
+          "distance": 190
+        },
+        {
+          "name":"Residencias 1",
+          "distance": 130
+        },
+        {
+          "name":"Salon Congresos",
+          "distance": 120
+        }
+        ]
+    },
+    {
+      "id": 2,
+      "location": [111, 127],
+      "path_from_section_start": [[115, 124],[114, 125],[113, 126],[113, 127],[112, 127],[111, 127]],
+      "status": "free",
+      "type": "normal",
+      "destinations":[
+        {
+          "name":"Caseta Policia",
+          "distance": 192
+        },
+        {
+          "name":"Residencias 1",
+          "distance": 132
+        },
+        {
+          "name":"Salon Congresos",
+          "distance": 122
+        }
+        ]
+    },
+    {
+      "id": 3,
+      "location": [110, 129],
+      "path_from_section_start": [[115, 124],[114, 125],[113, 126],[113, 127],[113, 128],[112, 129],[111, 129],[110, 129]],
+      "status": "free",
+      "type": "normal",
+      "destinations":[
+        {
+          "name":"Caseta Policia",
+          "distance": 194
+        },
+        {
+          "name":"Residencias 1",
+          "distance": 134
+        },
+        {
+          "name":"Salon Congresos",
+          "distance": 124
+        }
+        ]
+    },
+    {
+      "id": 4,
+      "location": [109, 131],
+      "path_from_section_start": [[115, 124],[114, 125],[113, 126],[113, 127],[113, 128],[112, 129],[112, 130],[112, 131],[111, 131],[110, 131],[109, 131]],
+      "status": "free",
+      "type": "normal",
+      "destinations":[
+        {
+          "name":"Caseta Policia",
+          "distance": 196
+        },
+        {
+          "name":"Residencias 1",
+          "distance": 136
+        },
+        {
+          "name":"Salon Congresos",
+          "distance": 123
+        }
+        ]
+    },
+    {
+      "id": 5,
+      "location": [108, 133],
+      "path_from_section_start": [[115, 124],[114, 125],[113, 126],[113, 127],[113, 128],[112, 129],[111, 130],[111, 131],[111, 132],[110, 133],[109, 133],[108, 133]],
+      "status": "free",
+      "type": "normal",
+      "destinations":[
+        {
+          "name":"Caseta Policia",
+          "distance": 200
+        },
+        {
+          "name":"Residencias 1",
+          "distance": 138
+        },
+        {
+          "name":"Salon Congresos",
+          "distance": 119
         }
         ]
     }
