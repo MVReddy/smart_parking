@@ -2,17 +2,16 @@
   "destinations":[
         {
           "name":"Caseta Policia",
-          "distance": 50
+          "distance": 20
         },
         {
           "name":"Residencias 1",
           "distance": 50
         },
         {
-          "name": "otra",
-          "distance": 100 
+          "name": "Salon Congresos",
+          "distance": 500 
         }
-        
     ],
   "sections":[ 
   {
@@ -28,6 +27,10 @@
         {
           "name":"Residencias 1",
           "distance": 50
+        },
+        {
+          "name": "Salon Congresos",
+          "distance": 500 
         }
     ],
     "slots":[
@@ -45,6 +48,10 @@
         {
           "name":"Residencias 1",
           "distance": 50
+        },
+        {
+          "name": "Salon Congresos",
+          "distance": 400 
         }
         ]
     },
@@ -62,6 +69,10 @@
         {
           "name":"Residencias 1",
           "distance": 52
+        },
+        {
+          "name": "Salon Congresos",
+          "distance": 400 
         }
         ]
     },
@@ -79,6 +90,10 @@
         {
           "name":"Residencias 1",
           "distance": 54
+        },
+        {
+          "name": "Salon Congresos",
+          "distance": 400 
         }
         ]
     },
@@ -96,6 +111,10 @@
         {
           "name":"Residencias 1",
           "distance": 56
+        },
+        {
+          "name": "Salon Congresos",
+          "distance": 400 
         }
         ]
     },
@@ -113,6 +132,10 @@
         {
           "name":"Residencias 1",
           "distance": 58
+        },
+        {
+          "name": "Salon Congresos",
+          "distance": 400 
         }
         ]
     },
@@ -130,6 +153,10 @@
         {
           "name":"Residencias 1",
           "distance": 60
+        },
+        {
+          "name": "Salon Congresos",
+          "distance": 400 
         }
         ]
     }
@@ -148,6 +175,10 @@
         {
           "name":"Residencias 1",
           "distance": 70
+        },
+        {
+          "name": "Salon Congresos",
+          "distance": 400 
         }
     ],
     "slots":[
@@ -165,6 +196,10 @@
         {
           "name":"Residencias 1",
           "distance": 40
+        },
+        {
+          "name": "Salon Congresos",
+          "distance": 400 
         }
         ]
     },
@@ -182,6 +217,10 @@
         {
           "name":"Residencias 1",
           "distance": 42
+        },
+        {
+          "name": "Salon Congresos",
+          "distance": 399 
         }
         ]
     },
@@ -199,6 +238,10 @@
         {
           "name":"Residencias 1",
           "distance": 44
+        },
+        {
+          "name": "Salon Congresos",
+          "distance": 398 
         }
         ]
     },
@@ -216,6 +259,10 @@
         {
           "name":"Residencias 1",
           "distance": 46
+        },
+        {
+          "name": "Salon Congresos",
+          "distance": 397
         }
         ]
     }
@@ -228,16 +275,16 @@
     "no_slots": 5,
     "destinations":[
         {
-          "name":"Salon Congresos",
-          "distance": 220
-        },
-        {
           "name":"Caseta Policia",
           "distance": 200
         },
         {
           "name":"Residencias 1",
           "distance": 190
+        },
+        {
+          "name":"Salon Congresos",
+          "distance": 220
         }
     ],
     "slots":[
@@ -355,16 +402,16 @@
     "no_slots": 5,
     "destinations":[
         {
-          "name":"Salon Congresos",
-          "distance": 210
-        },
-        {
           "name":"Caseta Policia",
           "distance": 200
         },
         {
           "name":"Residencias 1",
           "distance": 200
+        },
+        {
+          "name":"Salon Congresos",
+          "distance": 210
         }
     ],
     "slots":[
@@ -609,15 +656,15 @@
     "no_slots": 5,
     "destinations":[
         {
-          "name":"Salon Congresos",
-          "distance": 400
-        },
-        {
           "name":"Caseta Policia",
           "distance": 400
         },
         {
           "name":"Residencias 1",
+          "distance": 400
+        },
+        {
+          "name":"Salon Congresos",
           "distance": 400
         }
     ],
@@ -863,15 +910,15 @@
     "no_slots": 5,
     "destinations":[
         {
-          "name":"Salon Congresos",
-          "distance": 415
-        },
-        {
           "name":"Caseta Policia",
           "distance": 415
         },
         {
           "name":"Residencias 1",
+          "distance": 415
+        },
+        {
+          "name":"Salon Congresos",
           "distance": 415
         }
     ],
