@@ -6,6 +6,7 @@ __author__ = 'Obed N Munoz'
 import pygame
 import json_loader
 from json_loader import loader
+from a_star import AStar
 import sys
 import time
 import json
@@ -27,7 +28,7 @@ def main(args):
 
     # change the file names to your player graphic and map file
     player_image_file = "img/direction_24px.png"
-    map_file = "maps/mega_map.json"
+    map_file = "maps/mega_map_sections.json"
 
     # change to False (with capital F) to turn off red squares over
     # collision rectangles
@@ -37,7 +38,8 @@ def main(args):
     filename = "maps/paths.json"
     path = []
     paths = loader.json_to_dict(filename)
-
+    a_star = AStar(filename)
+#    print a_star
 
     #initialize json loader, build tileset list, load player graphic
     initial = json_loader.Initialize(screen, TESTING, map_file, player_image_file, paths, 80)
@@ -46,6 +48,7 @@ def main(args):
     initial_position = (-4574,-4837)  
     map = json_loader.Map(initial, initial_position)
     map.move(initial_position[0], initial_position[1])
+    #map.move_to_tile([146,153])
 
     # handle events such as keyboard / touchscreen presses
     event = json_loader.Event(initial)
@@ -57,35 +60,42 @@ def main(args):
         new_path = []
 
     sections = paths["sections"]
-    section = sections[1]
+    section = sections[0]
 
     slot = -1    
     new_car = 0
     [x,y] = [0,0]
 
+
+    students = 20
+#    path =  a_star.a_star(a_star.graph,"Caseta Policia")[0]
+    
+
     while True:
         event.update()
     
         if event.direction == "start" and not path:
-            new_car = random.randint(1,10)  
-            map.player.change_car_image("img/car_24px_"+str(new_car)+".png")
-            slot += 1
-            path = [x for x in section["path_from_start"]]
-            path +=  section["slots"][slot]["path_from_section_start"]
-            path.reverse()   
+            #new_car = random.randint(1,10)  
+            map.player.change_car_image("img/car_24px_"+str(students)+".png")
+            astar =  a_star.a_star(a_star.graph,"Salon Congresos")
+            path = astar[0]
+            a_star.rebuild_graph(astar[1])
+            #slot += 1
+            #path = [x for x in section["path_from_start"]]
+            #path +=  section["slots"][slot]["path_from_section_start"]
+            #path.reverse()   
        
         if path:
             move = path.pop()
             map.move_to_tile(move)
-            time.sleep(.1)
+            time.sleep(.01)
             event.direction = "car_moving"
             if not path:
-                map.change_tile(move, 3, new_car-1)
+                map.change_tile(move, 3, students-1)
                 map.player.change_car_image("img/direction_24px.png")
                 event.direction = "stop"  
+                students = students - 1
         map.update(event.direction)
-        
-#        if event.direction != "car_moving":
         
         event.direction = "stop"  
 

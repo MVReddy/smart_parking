@@ -29,8 +29,6 @@ class Map():
         self.test_message = basefont.render("New Car", True, (0,0,0), (255, 255, 255))
         initial.test_rect = self.test_message.get_rect()
 
-
-
     def check_collision(self):
         adjust = [0, 0]
         if self.direction == "left":

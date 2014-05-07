@@ -1,5 +1,6 @@
 import json
 
+# JSON to dict Converter from file
 def json_to_dict(filename):
     dictionary = None
     try:
