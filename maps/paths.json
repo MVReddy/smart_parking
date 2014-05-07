@@ -1,5 +1,19 @@
 {
-  
+  "destinations":[
+        {
+          "name":"Caseta Policia",
+          "distance": 50
+        },
+        {
+          "name":"Residencias 1",
+          "distance": 50
+        },
+        {
+          "name": "otra",
+          "distance": 100 
+        }
+        
+    ],
   "sections":[ 
   {
     "name": "sec1:casetaEntrada",
