@@ -28,7 +28,7 @@ def main(args):
 
     # change the file names to your player graphic and map file
     player_image_file = "img/direction_24px.png"
-    map_file = "maps/mega_map_sections.json"
+    map_file = "maps/mega_map.json"
 
     # change to False (with capital F) to turn off red squares over
     # collision rectangles
@@ -67,7 +67,7 @@ def main(args):
     [x,y] = [0,0]
 
 
-    students = 20
+    students = 10
 #    path =  a_star.a_star(a_star.graph,"Caseta Policia")[0]
     
 
@@ -77,7 +77,7 @@ def main(args):
         if event.direction == "start" and not path:
             #new_car = random.randint(1,10)  
             map.player.change_car_image("img/car_24px_"+str(students)+".png")
-            astar =  a_star.a_star(a_star.graph,"Salon Congresos")
+            astar =  a_star.a_star(a_star.graph,"Caseta Policia")
             path = astar[0]
             a_star.rebuild_graph(astar[1])
             #slot += 1
@@ -88,7 +88,7 @@ def main(args):
         if path:
             move = path.pop()
             map.move_to_tile(move)
-            time.sleep(.01)
+            time.sleep(.1)
             event.direction = "car_moving"
             if not path:
                 map.change_tile(move, 3, students-1)
