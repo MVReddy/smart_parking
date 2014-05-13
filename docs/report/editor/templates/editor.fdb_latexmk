@@ -1,0 +1,20 @@
+# Fdb version 3
+["pdflatex"] 1399942324 "editor.tex" "editor.pdf" "editor" 1399942324
+  "/etc/texmf/web2c/texmf.cnf" 1398145170 475 c0e671620eb5563b2130f56340a5fde8 ""
+  "/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty" 1335995445 8253 3bdedc8409aa5d290a2339be6f09af03 ""
+  "/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty" 1335995445 18425 775b341047ce304520cc7c11ca41392e ""
+  "/usr/share/texlive/texmf-dist/tex/latex/base/article.cls" 1254151887 20571 b8bd218bf2e18b4f5817ee643cd9c515 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo" 1254151887 9042 248dfba326a1b8733d6bb8e0a3ac1e49 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty" 1156702488 6406 6f55214ce374a5b186b8781f4796f1f9 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg" 1254097189 802 7b8c8d72c24d795ed7720e4dfd29bff3 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def" 1306616590 55368 3c8a0d99822330f2dfabc0dfb09ce897 ""
+  "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1392645748 31083 1dfd8bf685ce0009c40532fedf8a7c53 ""
+  "/usr/share/texmf/web2c/texmf.cnf" 1392645748 31083 1dfd8bf685ce0009c40532fedf8a7c53 ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1398145191 722335 13e1465563c957f484f4256600a588a6 ""
+  "editor.aux" 1399942245 8 a94a2480d3289e625eea47cd1b285758 ""
+  "editor.tex" 1399942323 1894 d76563bd49ecf0fb69b1adb05b28e3f3 ""
+  "framed.sty" 0 -1 0 ""
+  "svmult.cls" 1183155818 81406 83350e990a513f868a8e73ba01be0175 ""
+  (generated)
+  "editor.pdf"
+  "editor.log"
