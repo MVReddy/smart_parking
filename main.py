@@ -77,7 +77,7 @@ def main(args):
         if event.direction == "start" and not path:
             #new_car = random.randint(1,10)  
             map.player.change_car_image("img/car_24px_"+str(students)+".png")
-            astar =  a_star.a_star(a_star.graph,"Caseta Policia")
+            astar =  a_star.a_star(a_star.graph,"Residencias 1")
             path = astar[0]
             a_star.rebuild_graph(astar[1])
             #slot += 1

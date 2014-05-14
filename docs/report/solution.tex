@@ -37,7 +37,7 @@ The algorithm described so far gives us only the length of the shortest path. To
 The ITESM parking lot has more than 1500 parking lots that are distributed near to common areas like Library, High School, Administrative offices, Conferences Center, etc.
 In order to represent the parking lot distribution as a conected graph, it's required to separate parking sections based on the location and the nearest buildings areas 
 it's set.
-As we show in Figure 3.1, here's how each node type is being configured:
+As we show in Figure 3.2, here's how each node type is being configured:
 \begin{itemize}
 \item{Parking of Lot Start}
 \subitem{List of Destinations with (Name and Estimated Distance h(x))}
@@ -53,7 +53,7 @@ As we show in Figure 3.1, here's how each node type is being configured:
 \subitem{Neighbors (Slots)}
 \subitem{Node Type}
 \item{Destinations}
-\subitem{The final visited node(stot) should be conected to the final destination (Example: Conferences Center)}
+\subitem{The final visited node(slot) should be conected to the final destination (Example: Conferences Center)}
 \end{itemize}
 
 \begin{figure}[H]
@@ -89,7 +89,7 @@ need to park in the slot-type nodes.
 \subsection{f(x) = g(x) + h(x) Calculation}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\textwidth]{images/f_g_h.png}
+    \includegraphics[width=.9\textwidth]{images/f_g_h.png}
     \caption{Functions to calculate f(x) = g(x) + h(h)}
     \label{fig:f_g_h}
 \end{figure}
@@ -97,9 +97,16 @@ need to park in the slot-type nodes.
 \subsection{A Star Algorithm}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\textwidth]{images/a_star.png}
+    \includegraphics[width=.9\textwidth]{images/a_star.png}
     \caption{A* Algorithm}
     \label{fig:a_star}
 \end{figure}
 
 \section{Tech Behind}
+
+\begin{itemize}
+  \item \textbf{Python 2.7.x} \textit{as default scripting language}t
+  \item \textbf{PyGame Framework} \textit{for Graphics Development}
+  \item \textbf{Tiled} \textit{for JSON Based Map definition}
+  \item \textbf{JSON} \textit{as default paths and map definition language}
+\end{itemize}
