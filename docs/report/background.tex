@@ -17,9 +17,9 @@ It turns out that A* strategy is more than just reasonable: provided that the he
 
 The performance of heuristic search algorithms depends on the quality of the heuristic function. One can sometimes construct good heuristics by relaxing the problem definition, by storing precomputed solution costs for sub problems in a pattern database, or by learning from experience with the problem class.
 
-A* with consistent heuristics has many desirable properties: 
+A* with consistent heuristics has many desirable properties\cite[p.~50]{elsevier12}: 
 
 \begin{itemize}
   \item A* can find a shortest path even though it expands every state at most once. It does not need to re-expand states that it has expanded already. 
-  \item A* is at least as efficient as every other search algorithm in the sense that every search algorithm (that has the same heuristic values available as A*) needs to expand at least the states that A* expands.
+  \item A* is at least as efficient as every other search algorithm in the sense that every search algorithm (that has the same heuristic values available as A*) needs to expand at least the states that A* expands. 
 \end{itemize}
