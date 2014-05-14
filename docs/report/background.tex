@@ -1,3 +1,25 @@
 \chapter{Background}
+\setlength{\parskip}{1em}
+\section{Informed Search Algorithms}
+Informed search algorithms are based on choosing an action taking into account specific knowledge beyond the definition of the problem itself which may derive in finding solutions more efficiently than an uninformed strategy would.
 
-Testing stuff
+The general approach for informed search algorithm is called best-first search. Best-first search is an instance of the general {\textit{TREE-SEARCH}} or {\textit{GRAPH-SEARCH}} algorithm in which a node is selected for expansion based on an evaluation function.  The evaluation function is taken as a cost estimate, so the node with lowest evaluation is expanded first. 
+
+\section{A* Algorithm}
+The most widely known form of best-first search is called A* search. It evaluates nodes by combining \(g(n)\), the cost to reach the node, and \(h(n)\), the cost to get from the node to the goal: 
+\(f(n)=g(n) + h(n)\)
+
+Since \(g(n)\) gives the path cost from the start node to node n, and \(h(n)\) is the estimated cost of the cheapest path from n to the goal, we have
+\(h(n)\) = estimated cost of the cheapest solution through n.
+
+\section{A* Advantages}
+It turns out that A* strategy is more than just reasonable: provided that the heuristic function \(h(n)\)) satisfies certain conditions, A* search is both complete and optimal.
+
+The performance of heuristic search algorithms depends on the quality of the heuristic function. One can sometimes construct good heuristics by relaxing the problem definition, by storing precomputed solution costs for sub problems in a pattern database, or by learning from experience with the problem class.
+
+A* with consistent heuristics has many desirable properties: 
+
+\begin{itemize}
+  \item A* can find a shortest path even though it expands every state at most once. It does not need to re-expand states that it has expanded already. 
+  \item A* is at least as efficient as every other search algorithm in the sense that every search algorithm (that has the same heuristic values available as A*) needs to expand at least the states that A* expands.
+\end{itemize}
