@@ -34,9 +34,9 @@ The algorithm described so far gives us only the length of the shortest path. To
 
 \section{A* for path finding in ITESM Parking Lot}
 \paragraph{} ~\\
-The ITESM parking lot has more than 1500 parking lots that are distributed near to common areas like Library, High School, Administrative offices, Conferences Center, etc.
+The ITESM parking lot has more than 3000 parking lots that are distributed near to common areas like Library, High School, Administrative offices, Conferences Center, etc.
 In order to represent the parking lot distribution as a conected graph, it's required to separate parking sections based on the location and the nearest buildings areas 
-it's set.
+they are set.
 As we show in Figure 3.2, here's how each node type is being configured:
 \begin{itemize}
 \item{Parking of Lot Start}
@@ -64,7 +64,7 @@ As we show in Figure 3.2, here's how each node type is being configured:
 \end{figure}
 
 \paragraph{} ~\\
-Once we have our graph representation we are able to perform slot searches. It's really keep the type of Node when visiting it in the A* Algorithm. The type 
+Once we have our graph representation we are able to perform slot searches. It's really important to keep the type of Node when visiting it in the A* Algorithm. The type 
 of Node will be saying if it's an end node or if it cannot be a final node. For example, a Section Node, cannot be the end because it's a forbidden area to park, you 
 need to park in the slot-type nodes.
 

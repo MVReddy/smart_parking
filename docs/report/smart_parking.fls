@@ -170,9 +170,9 @@ INPUT ./images/path_to_police_station.png
 INPUT images/path_to_conferences_center.png
 INPUT ./images/path_to_conferences_center.png
 INPUT ./images/path_to_conferences_center.png
-INPUT images/path_to_recidenses.png
-INPUT ./images/path_to_recidenses.png
-INPUT ./images/path_to_recidenses.png
+INPUT images/path_to_residences.png
+INPUT ./images/path_to_residences.png
+INPUT ./images/path_to_residences.png
 OUTPUT future_work.aux
 INPUT future_work.tex
 INPUT future_work.tex
